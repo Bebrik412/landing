@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+.title {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+
+}
+.menu-container {
+    position: fixed;
+    background-color: #121212;
+    width: 100%;
+    padding: 20px 20px;
+    z-index: 9999;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0px 20px;
+}
+.menu a:hover {
+    color: rgb(255, 184, 52)
+}
+.menu {
+    float :right;
+    margin-top: 10px;
+}
+.header {
+    color: black;
+    background-image: linear-gradient(#e97973, #ffdfa3);
+    height: 900px;
+    overflow: hidden;
+}
+.header h1 {
+    color: white;
+    text-shadow: 10px 10px 0px #e06161;
+    position: absolute;
+    font-size: 100px;
+    top: 370px;
+    left: 400px;
+    z-index: 20;
+    font-weight: 800;
+}
+.header a{
+    position: absolute;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 40px;
+    top: 500px;
+    left: 820px;
+    box-shadow: 9px 9px 0px #e06161;
+    font-weight: 500;
+}
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.header-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-background .triangle {
+    top: 180px;
+    left: 720px;
+    animation: moveright 10s ease-in-out 0s infinite;
+}
+.header-background .octagon {
+    top: 600px;
+    left: 930px;
+    animation: rotatemove 10s ease-in-out 0s infinite;
+}
+.header-background .circle-dashed-border {
+    top: 500px;
+    left: 1500px;
+    animation: rotate 20s linear 0s infinite;;
+}
+.header-background .circle-bordered {
+    top: 740px;
+    left: 240px;
+    animation: moveright 10s ease-in-out 2s infinite;
+}
+.header-background .circle3 {
+    top: 320px;
+    left: -30px;
+    animation: upleft 10s ease-in-out 1s infinite;
+}
+.header-background .circle2 {
+    top: -20px;
+    left: 1840px;
+    animation: leftdown 10s ease-in-out 0s infinite;
+}
+.header-background .circle1 {
+    top: -100px;
+    animation: upleft 8s ease-in-out 0s infinite;
+}
+@keyframes upleft {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(40px, 80px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+@keyframes moveright {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(230%) rotate(180deg);
+    }
+    100% {
+        transform: translateX(0) rotate(359deg);
+    }
+}
+@keyframes rotatemove {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(80px, 200px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(359deg);
+    }
+}
+@keyframes leftdown {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(-180px, 200px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(359deg);
+    }
+}
+.about_us {
+    text-align: center;
+}
+.about_us p {
+    text-align: left;
+    font-weight: 500;
+}
+.about_us h1 {
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.wwd {
+    margin-top: 50px;
+    padding: 100px;
+    background-image: linear-gradient(7deg,#e97973 18%, #ffdfa3 70%, #ffffff 70%);
+}
+.text3 {
+    display: inline-block;
+    width: 45%;
+
+}
+.pic {
+    display: inline-block;
+    width: 40%;
+}
+.text3 p {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: 10px 10px #e06161;
+}
+.text3 h1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:25px;
+}
+.pic img {
+    width: 100%;
+    margin: 0px 0px -30px 20px;
+}
+.card-container {
+    display: inline-block;
+    margin-left: 430px;
+    margin-top: 100px
+}
+.card1 {
+    display: inline-block;
+}
+.card2 {
+    display: inline-block;
+}
+.card3 {
+    display: inline-block;
+}
+.card1, .card2, .card3 {
+    width: 300px;
+    border: #FFC997 5px solid;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    padding-top: 20px;
+    margin: 20px;
+}
+.card1 h1, .card2 h1, .card3 h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.card1 hr, .card2 hr, .card3 hr {
+    width: 190px;
+    color: #E06161;
+    margin: auto;
+}
+.h11 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+.card1 p, .card2 p, .card3 p {
+    margin-top: 10px;
+}
+.uslugi {
+    background-image: linear-gradient(165deg,#e97973 50%, #ffffff 50%);
+    padding-bottom: 100px
+}
+.content h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.goodbye {
+    margin: 30px auto;
+    width: 800px;
+    border: #FFC997 5px solid;
+    padding: 35px 35px;
+    border-radius: 15px;
+    box-shadow: 10px 10px #e06161;
+    background-color: white;
+}
+li {
+    list-style-type: circle;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 20px
+}
+.goodbye h2 {
+    font-weight: 800;
+}
+.card1_1 {
+    transform: translateX(-130px);
+}
+.card2_1 {
+    transform: translateX(50px);
+}
+.card3_1 {
+    transform: translateX(-100px);
+}
+.circle_back {
+    position: absolute;
+    top: 200px;
+    z-index: -100;
+    left: 1100px
+}
+.hexagon_back {
+    position: absolute;
+    top: 0px;
+    z-index: -100;
+    left: 0px
+}
+.why_we_are_good {
+    padding-top: 100px;
+    position: relative;
+}
+.img_1 {
+    background-image: url(img/portfolio/site1.png);
+}
+.img_2{
+    background-image: url(img/portfolio/site2.png);
+}
+.img_3 {
+    background-image: url(img/portfolio/site3.png);
+}
+.img_4{
+    background-image: url(img/portfolio/site4.png);
+}
+.portfolio_content h1 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.pngs {
+    width: 49%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    border: #e06161 5px solid;
+    display: inline-block;
+    transition: 0.5s;
+}
+.pngs:hover {
+    transform: scale(0.9);
+}
+.contact {
+    background-image: linear-gradient(#db7e7e, #ffc997);
+    text-align: center;
+    padding: 60px;
+    margin-top: 50px
+}
+.contact h1 {
+    margin-bottom: 45px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    padding: 25px 70px;
+    border-radius: 40px;
+    box-shadow: 10px 10px #e06161;
+}
+@media(max-width: 768px) {
+    .menu-container {
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        float: right;
+        padding: 10px;
+    }
+    .menu a {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+    .menu-container img {
+        width: 100px;
+    }
+    .header {
+        overflow: visible;
+        position: relative;
+    }
+    .header h1 {
+        left: 0;
+        text-align: center;
+        font-size: 40px;
+    }
+    .header a {
+        left:55px;
+        z-index: 35;
+    }
+    .about_us p {
+        padding: 10px;
+    }
+    .wwd {
+        padding: 10px;
+    }
+    .text3 {
+        width: 97%;
+    }
+    .pic img {
+        width: 100%;
+    }
+    .pic {
+        width: 86%
+    }
+    .card-container {
+        margin-left: 10px;
+    }
+    .goodbye {
+        width: 90%;
+    }
+    .card1_1, .card2_1, .card3_1 {
+        transform: translate(0,0);
+    }
+    .pngs {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    .contact a {
+        padding: 20px;
+    }
+    .circle_back {
+        top: 400px;
+        left: -450px;
+    }
+    .hexagon_back {
+        width: 300px
+    }
+}
